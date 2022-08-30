@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'/>
+<meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>My Biografi</title>
+<style>
+body{background:#EAEAEA;margin:0;font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;color:#555;}
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+.content-wrapper{width:100%;max-width:100%;margin:0 auto;padding:0;background:#fff;}
+header .content-wrapper{text-align:center;padding:40px 20px;}
+.topnav ul{background:#033;margin:0;padding:0;font-size:0}
+.topnav li{display:inline-block;margin:0;padding:0;}
+.topnav li a{font-size:16px;margin:0;padding:12px 20px;display:block;text-align:center;text-decoration:none;color:#FFF}
+.topnav li a:hover{background:#666}
+.topnav li.home{font-weight:bold;display:none}
+.content{margin:0;padding:20px 20px 0;overflow:hidden;}
+.content h2{margin:0 0 20px;padding:0;font-size:20px;text-align:center;text-transform:capitalize;}
+.content p{margin:0 0 20px;padding:0;font-size:16px;}
+footer .content-wrapper{background:#666;color:#CCC;text-align:center;padding:10px 20px;font-size:90%;}
+.fixed-nav #fixedmenu{background:#033;position:fixed;top:0;left:0;width:100%;z-index:999;}
+.fixed-nav .topnav li.home{display:inline-block;}
+img {max-width: 100%; height:auto;}
+video {max-width: 100%;height: auto;}
+prev {max-width: auto;height: 100%;}
+table {max-width: auto;height: 100%;}
+</style>
+</head>
+
+<body>
+<header>
+<div class='content-wrapper'>
+<img style="float:left; width: 120px; height: 120px;" src="picture/giphy (9).gif" />
+<h1>BIOGRAFI</h1>
+</div>
+</header>
+<div id='fixedmenu'>
+<div class='content-wrapper'>
+<div class='topnav'>
+<ul>
+<li class='home'><a href='#' title='HEADER BLOG'>Home</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class='content-wrapper'>
+<div class='content'>
+  <p><marquee style="background-color:rgb(117, 243, 13)" direction="left" scrollamount="5"><h3>Mata Pelajaran Pemrograman Dasar kelas X Semester 1 oleh Tahir, S.Pd.</h3> </marquee></center></p>
+<h1 style="text-align: center;">TAHIR, S.Pd.</h1>
+<center><img style="width:400px;height: 250px;" src="picture/ww.gif" /></center>
+<section class="profil"><h3 style="background-color: rgb(1, 253, 1);">A.	Profil</h3>
+<p style="text-align: justify;">Nama Tahir, saya lahir di dalam sebuah kelaurga yang dimana Ayah bernama Lana'ing dan ibunda saya bernama Isennang, Saya lahir sebagai buah hati kedua orang tua saya yang ketiga. Saya lahir pada hari sabtu, 05 Juni 1993 di Pinrang, 
+    tepatnya di kelurahan Mattiro Deceng, Kecamatan Tiroang, Kabupaten Pinrang Provinsi Sulawesi Selatan. </p>
+</section>
+<section class="pendidikan"><h3 style="background-color: rgb(1, 253, 1);">B.	Pendidikan</h3>
+<p>
+    <table border="0" style="text-align: left;">
+            <tr>
+                <td> Sekolah Dasar </td>
+                <td> :</td>
+                <td>  SDN 253 Tiroang</td>
+            </tr>
+            <tr>
+                <td> Sekolah Menengah Pertama </td>
+                <td> :</td>
+                <td>  SMP Negeri 3 Pinrang</td>
+            </tr>
+            <tr>
+                <td> Sekolah Menengah Atas </td>
+                <td> :</td>
+                <td>  SMA Negeri 2 Pinrang</td>
+            </tr>
+            <tr>
+                <td> Perguruan Tinggi </td>
+                <td> :</td>
+                <td>  STKIP Muhammadiyah Sidenreng Rappang</td>
+            </tr>
+            <tr>
+                <td>   </td>
+                <td> :</td>
+                <td>  Jurusan Teknologi Pendidikan</td>
+            </tr>
+    </table>
+</p>
+</section>
+<section class="kontak"><h3 style="background-color: rgb(1, 253, 1);">C.	Kontak</h3>
+    <table border="0">
+        <tr>
+            <td> No. HP </td>
+            <td> :</td>
+            <td>  082337004833</td>
+        </tr>
+        <tr>
+            <td> Whatsapp </td>
+            <td> :</td>
+            <td>  082337004833</td>
+        </tr>
+        <tr>
+            <td> Email </td>
+            <td> :</td>
+            <td>  myster.tahir@gmail.com</td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td> :</td>
+            <td>  phinrang@qmail.id</td>
+        </tr>
+    </table>
+</section>
+</div>
+</div>
+<footer>
+<div class='content-wrapper'>
+&#169;SMK Muhammadiyah Sidenreng Rappang  bekerja sama dengan <a style="color: chartreuse;" href=https://www.phinrang.my.id>www.phinrang.my.id</href>
+</div>
+</footer>
+<script>
+//<![CDATA[
+const nav = document.querySelector('#fixedmenu');
+const navTop = nav.offsetTop;
+
+function stickyNavigation() {
+  console.log('navTop = ' + navTop);
+  console.log('scrollY = ' + window.scrollY);
+
+  if (window.scrollY >= navTop) {
+    document.body.classList.add('fixed-nav');
+  } else {
+    document.body.classList.remove('fixed-nav');
+  }
+}
+
+window.addEventListener('scroll', stickyNavigation);
+//]]>
+</script>
+</body>
+</html>
